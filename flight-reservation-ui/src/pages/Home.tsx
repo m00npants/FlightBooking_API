@@ -51,6 +51,108 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+
+            {/* 🌍 DESTINATIONS SECTION */}
+            <div className="mt-10">
+
+                <h2 className="text-white text-xl font-semibold mb-4 text-center">
+                    Popular destinations
+                </h2>
+
+                <div className="dest-grid">
+                    {[
+                        {
+                            city: "Paris",
+                            img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+                        },
+                        {
+                            city: "Tokyo",
+                            img: "https://images.unsplash.com/photo-1549693578-d683be217e58"
+                        },
+                        {
+                            city: "New York",
+                            img: "https://images.unsplash.com/photo-1496588152823-86ff7695e68f"
+                        },
+                        {
+                            city: "London",
+                            img: "https://images.unsplash.com/photo-1486299267070-83823f5448dd"
+                        },
+                        {
+                            city: "Barcelona",
+                            img: "https://images.unsplash.com/photo-1509840841025-9088ba78a826"
+                        },
+                        {
+                            city: "Dubai",
+                            img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+                        },
+                        {
+                            city: "Sydney",
+                            img: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9"
+                        },
+                        {
+                            city: "Rome",
+                            img: "https://images.unsplash.com/photo-1529260830199-42c24126f198"
+                        }
+
+                    ].map((d) => (
+                        <div key={d.city} className="dest-card">
+                            <img src={d.img} className="dest-img" />
+                            <div className="dest-label">{d.city}</div>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
+
+            {/* ⚡ LAST MINUTE DEALS SECTION */}
+            <div className="mt-16">
+
+                <h2 className="text-white text-xl font-semibold mb-4 text-center">
+                    Last minute deals
+                </h2>
+
+                <div className="dest-grid">
+                    {[
+                        {
+                            city: "Bangkok",
+                            img: "https://images.unsplash.com/photo-1508009603885-50cf7c579365"
+                        },
+                        {
+                            city: "Istanbul",
+                            img: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200"
+                        },
+                        {
+                            city: "Los Angeles",
+                            img: "https://images.unsplash.com/photo-1500916434205-0c77489c6cf7"
+                        },
+                        {
+                            city: "Singapore",
+                            img: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd"
+                        },
+                        {
+                            city: "Amsterdam",
+                            img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=800&q=60"
+                        },
+                        {
+                            city: "Seoul",
+                            img: "https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=800&q=60"
+                        },
+                        {
+                            city: "Miami",
+                            img: "https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?auto=format&fit=crop&w=800&q=60"
+                        },
+                        {
+                            city: "Prague",
+                            img: "https://images.unsplash.com/photo-1541849546-216549ae216d"
+                        }
+                    ].map((d) => (
+                        <div key={d.city} className="dest-card">
+                            <img src={d.img} className="dest-img" />
+                            <div className="dest-label">{d.city}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </PageLayout>
     );
 }
